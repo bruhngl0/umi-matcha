@@ -4,7 +4,7 @@ import '../styles/project.scss';
 const projects = [
   { id: 1, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'craze.png', description1:'we live lit', description2: 'test description two' },
   { id: 2, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'about.png', description1:'we live lit', description2: 'test description two' },
-  { id: 3, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'contact.png', description1:'we live lit', description2: 'test description two' },
+  { id: 3, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'contact.png', description1:'we live lit', description2: 'test description two', email: 'hello@unimatchashop.com' },
 
 ];
 
@@ -67,7 +67,13 @@ const Project = () => {
             backgroundPosition: 'center', // Optional: keeps the background centered
           }}
         >
-         
+           {project.id === 3 ? (
+            <a href={`mailto:${project.email}`} className="project-card-link">
+              <div className="overlay">
+                 contact us
+              </div>
+            </a>
+          ) : null}
         </div>
       ))}
     </div>
