@@ -1,0 +1,193 @@
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, Helvetica, sans-serif;
+    background-color: rgba(245,245,246,255);
+     
+  }
+  
+  
+  .header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    color: rgb(9, 9, 9);
+    width: 100%;
+   height: 150px;
+   background-color: #F7E5CB;
+   z-index: 2;
+   position: fixed;
+   font-size: 10px;
+   font-weight: 100;
+  
+  
+  
+   
+  }
+  
+  
+  
+  
+  
+  
+  .slide-menu {
+  position: fixed;
+  top: 0;
+  top: -100vh; /* Start off-screen */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(245,245,246,255);
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  transition:  0.3s ease-in-out;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(245,245,246,255);
+  background-size: cover;
+  }
+  
+  .slide-menu.open {
+  top: 0; /* Slide in */
+  }
+  
+  .slide-menu a {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 5rem;
+  width: 100%;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #eee;
+  
+  
+  }
+  
+  .slide-menu a:hover {
+  background-color: #f0f0f0;
+  }
+  
+  @media screen and (max-width: 500px){
+   
+  
+  
+    .header .right-head{
+       margin-right: 15px;
+       font-weight: lighter;
+       
+    }
+  
+    
+    .header{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        background-color: #F7E5CB;
+        width: 100%;
+        height: 100px;
+ 
+         
+  
+      
+       
+    }
+  
+    .header .left-head{
+      margin-left: 20px;
+      justify-content: flex-start;
+     color: rgb(0, 0, 0);
+     font-size: 20px;
+    
+     }
+  }
+    
+  .footer-top{
+      
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px;
+    background-color: rgba(245,245,246,255);
+    width: 90%;
+  }
+  .iris{
+    width: 40px;
+  }
+  .large-group-top{
+    margin-top: 2rem;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+  
+    >span{
+        font-size: 4.4rem;
+        color: gray;
+        font-weight: 600;
+        border-bottom: 1px solid rgb(5, 5, 5);
+        letter-spacing: -0.04em;
+  
+    }
+  }
+  
+  .small-group-top{
+    margin-top: 6rem;
+    color: black;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+  
+    >span{
+        font-size: 16px;
+        padding-top:4px ;
+        padding-bottom:4px; 
+        color: rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+  }
+  
+  .small-group-menu-top{
+    margin-top: 0rem;
+    font-size: 12px;
+    padding-top:4px ;
+    padding-bottom:4px; 
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  
+  
+  
+  .policy-top{
+    margin-top: 2rem;
+    font-size: 12px;
+  }
+  
+  .des-1-top{
+    margin-top: 1rem;
+    font-size: 12px;
+  }
+  
+  .des-2-top{
+  font-size: 12px;
+  }
+
+
+  .logo-umi {
+    width: 140px;
+    background-color: #F7E5CB;
+  }
