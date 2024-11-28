@@ -1,0 +1,107 @@
+/* src/Projects.css */
+
+  
+
+  
+.title{
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .des{
+    padding-top: 2rem;
+    font-size: 0.8rem;
+  }
+ 
+  .name{
+    padding-top: 1rem ;
+    font-size: 2rem;
+  }
+
+  .desc-1{
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  
+  }
+  
+
+
+
+
+  .projects-container {
+    position: relative;
+    height: 200vh; /* to allow scrolling */
+    width: 100%;
+    overflow-y: none;
+  }
+  
+  .project-card {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    background-color: rgba(245, 245, 246, 1);
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(222, 216, 216, 0.1);
+    z-index: 1;
+  }
+  
+  .project-card.show {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .project-card.fade-out {
+    opacity: 1;
+    animation: fadeOut 0.5s ease-in-out forwards; 
+  
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      filter: brightness(1);
+     
+      scale: (1);
+    }
+    100% {
+      opacity: 1;
+      filter: brightness(0.5); /* Adjust this to the level you want */
+      
+      scale: .96;
+    }
+  }
+
+  
+  .project-card img {
+    width: 25%;
+    height: 50%;
+    margin-top: 1rem;
+    display: flex;
+    align-self: center;
+    background-color: #486ba4;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .projects-container {
+      height: 600vh;
+    }
+  
+    .project-card img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+
+  /* src/Projects.css */
+
+  
+  

@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Footer from "./components/Footer"
+import Project from "./components/Project"
 
 
 import "../src/styles/header.scss"
@@ -16,9 +17,9 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <About />
-      <Footer />
+      
+      <Project />
+      
     </>
   )
 }

@@ -30,7 +30,7 @@ const Header = () => {
      
      
       
-      <img src = "umi.png"  className='logo-umi'/>
+      <img src = "halflogo.jpeg"  className='logo-umi'/>
     </div>
   );
 };
