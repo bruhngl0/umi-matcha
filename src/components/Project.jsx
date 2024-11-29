@@ -2,15 +2,59 @@ import React, { useEffect, useState, useRef } from 'react';
 import '../styles/project.scss';
 
 const projects = [
-  { id: 1, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'new-hero.webp', description1:'we live lit', description2: 'test description two' },
-  { id: 2, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'newabout.webp', description1:'we live lit', description2: 'test description two' },
-  { id: 3, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'newcont.webp', description1:'we live lit', description2: 'test description two', email: 'hello@unimatchashop.com' },
-
+  { 
+    id: 1, 
+    title: 'UNNECESSARY', 
+    description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
+    name: 'e-comm', 
+    mobileBgImage: 'new-hero.webp', 
+    desktopBgImage: 'pchero.webp', // Add desktop background image
+    description1:'we live lit', 
+    description2: 'test description two' 
+  },
+  { 
+    id: 2, 
+    title: 'UNNECESSARY', 
+    description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
+    name: 'e-comm', 
+    mobileBgImage: 'newabout.webp', 
+    desktopBgImage: 'pcabout.webp', // Add desktop background image
+    description1:'we live lit', 
+    description2: 'test description two' 
+  },
+  { 
+    id: 3, 
+    title: 'UNNECESSARY', 
+    description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
+    name: 'e-comm', 
+    mobileBgImage: 'newcont.webp', 
+    desktopBgImage: 'pccontct.webp', // Add desktop background image
+    description1:'we live lit', 
+    description2: 'test description two', 
+    email: 'hello@unimatchashop.com' 
+  },
 ];
 
 const Project = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const projectRefs = useRef([]);
 
+  // Handle responsive image switching
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // Intersection Observer effect (unchanged from your original code)
   useEffect(() => {
     const options = {
       root: null,
@@ -23,17 +67,13 @@ const Project = () => {
         const index = projectRefs.current.indexOf(entry.target);
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
-          if (index > 0 ) {
-            projectRefs.current[index - 1].classList.add('fade-out'); 
-          
+          if (index > 0) {
+            projectRefs.current[index - 1].classList.add('fade-out');
           }
-
-
         } else {
           entry.target.classList.remove('show');
           if (index > 0) {
             projectRefs.current[index - 1].classList.remove('fade-out');
-            
           }
         }
       });
@@ -62,28 +102,25 @@ const Project = () => {
           ref={(el) => (projectRefs.current[index] = el)}
           className="project-card"
           style={{
-            backgroundImage: `url(${project.image})`, // Set background image dynamically
-            backgroundSize: 'contain', // Optional: ensures the image covers the entire card
-            backgroundPosition: 'center', // Optional: keeps the background centered
+            backgroundImage: `url(${isMobile ? project.mobileBgImage : project.desktopBgImage})`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
           }}
-        >  
+        >
           {project.id === 1 ? (
-           
-              <div className="overlay-one" >
-                 <div className='box'>
-                 <span></span>
-                 <span></span>
-                 <span></span>
-          </div>
+            <div className="overlay-one">
+              <div className='box'>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-          
+            </div>
           ) : null}
-           
 
-           {project.id === 3 ? (
+          {project.id === 3 ? (
             <a href={`mailto:${project.email}`} className="project-card-link">
-              <div className="overlay" >
-                 contact us
+              <div className="overlay">
+                contact us
               </div>
             </a>
           ) : null}
