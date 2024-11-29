@@ -30,7 +30,7 @@
 
   .projects-container {
     position: relative;
-    height: 200vh; /* to allow scrolling */
+    height: 400vh; /* to allow scrolling */
     width: 100%;
     overflow-y: none;
   }
@@ -44,7 +44,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     transition: transform 0.5s ease, opacity 0.5s ease;
-    background-color: rgba(245, 245, 246, 1);
+    background-color: #F7E5CB;
     padding: 20px;
     margin: 0;
     width: 100%;
@@ -90,7 +90,7 @@
   
   @media only screen and (max-width: 600px) {
     .projects-container {
-      height: 600vh;
+      height: 300vh;
     }
   
     .project-card img {
@@ -104,6 +104,10 @@
     height: 100%;
     background-color: transparent;
     color: transparent;
+}
+
+.overlay{
+  background-color: transparent;
 }
 
   /* src/Projects.css */

@@ -2,9 +2,9 @@ import React, { useEffect, useState, useRef } from 'react';
 import '../styles/project.scss';
 
 const projects = [
-  { id: 1, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'craze.png', description1:'we live lit', description2: 'test description two' },
-  { id: 2, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'about.png', description1:'we live lit', description2: 'test description two' },
-  { id: 3, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'contact.png', description1:'we live lit', description2: 'test description two', email: 'hello@unimatchashop.com' },
+  { id: 1, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'new-hero.webp', description1:'we live lit', description2: 'test description two' },
+  { id: 2, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'newabout.webp', description1:'we live lit', description2: 'test description two' },
+  { id: 3, title: 'UNNECESSARY', description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', name: 'e-comm', image: 'newcont.webp', description1:'we live lit', description2: 'test description two', email: 'hello@unimatchashop.com' },
 
 ];
 
@@ -15,7 +15,7 @@ const Project = () => {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.2,
+      threshold: 0.1,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -69,7 +69,7 @@ const Project = () => {
         >
            {project.id === 3 ? (
             <a href={`mailto:${project.email}`} className="project-card-link">
-              <div className="overlay">
+              <div className="overlay" >
                  contact us
               </div>
             </a>
