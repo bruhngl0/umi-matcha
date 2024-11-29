@@ -66,7 +66,20 @@ const Project = () => {
             backgroundSize: 'contain', // Optional: ensures the image covers the entire card
             backgroundPosition: 'center', // Optional: keeps the background centered
           }}
-        >
+        >  
+          {project.id === 1 ? (
+           
+              <div className="overlay-one" >
+                 <div className='box'>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+          </div>
+              </div>
+          
+          ) : null}
+           
+
            {project.id === 3 ? (
             <a href={`mailto:${project.email}`} className="project-card-link">
               <div className="overlay" >
