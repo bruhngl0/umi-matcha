@@ -18,7 +18,7 @@ const projects = [
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
     mobileBgImage: 'newabout.webp', 
-    desktopBgImage: 'pcabout.webp', // Add desktop background image
+    desktopBgImage: 'pc-about2.png', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two' 
   },
@@ -28,7 +28,7 @@ const projects = [
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
     mobileBgImage: 'newcont.webp', 
-    desktopBgImage: 'pccontct.webp', // Add desktop background image
+    desktopBgImage: 'pc-contact2.png', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two', 
     email: 'hello@unimatchashop.com' 
@@ -120,7 +120,7 @@ const Project = () => {
           {project.id === 3 ? (
             <a href={`mailto:${project.email}`} className="project-card-link">
               <div className="overlay">
-                contact us
+              
               </div>
             </a>
           ) : null}
