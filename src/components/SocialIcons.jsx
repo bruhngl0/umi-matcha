@@ -23,12 +23,7 @@ const SocialIcons = () => {
       >
         <FaPinterest />
       </a>
-      <a 
-        href="hello@umimatchashop.com" 
-        className="social-icon email"
-      >
-        <FaEnvelope />
-      </a>
+      
     </div>
   );
 };
