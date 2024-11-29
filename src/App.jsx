@@ -3,7 +3,7 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Footer from "./components/Footer"
 import Project from "./components/Project"
-
+import SocialIcons from "./components/SocialIcons"
 
 import "../src/styles/header.scss"
 import "../src/styles/hero.scss"
@@ -19,6 +19,7 @@ function App() {
       <Header />
       
       <Project />
+      <SocialIcons />
       
     </>
   )

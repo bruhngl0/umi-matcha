@@ -1,0 +1,49 @@
+.fixed-social-icons {
+    position: fixed;
+    top: 50%; // Vertically center
+    right: 30px; // Distance from right side
+    transform: translateY(-50%); // Perfect vertical centering
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100; // Ensure it's above other content
+    background-color: #f7e5cb; // Slight transparency
+    padding: 10px;
+    border-radius: 10px;
+    
+  
+    .social-icon {
+      color: blue; // Icon color
+      font-size: 24px;
+      transition: all 0.3s ease;
+      opacity: 0.7;
+   
+  
+      &:hover {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+  
+      &.instagram {
+        color: blue; // Instagram brand color
+      }
+  
+      &.pinterest {
+        color: blue; // Pinterest brand color
+      }
+  
+      &.email {
+        color: blue; // Email icon color
+      }
+    }
+  }
+
+
+
+  @media (max-width: 769px) {
+
+   .fixed-social-icons{
+    display: none;
+   }
+    
+  }
