@@ -100,14 +100,23 @@
   }
 
 .project-card-link{
-    width: 100%;
-    height: 100%;
+    margin-top: 20rem;
     background-color: transparent;
     color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
 }
 
 .overlay{
+  display: flex;
+  justify-content: center;
+  height: 7rem;
+  width: 90vw;
+  
   background-color: transparent;
+  
 }
 
   /* src/Projects.css */
