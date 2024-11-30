@@ -8,7 +8,7 @@ const projects = [
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
     mobileBgImage: 'new-hero.webp', 
-    desktopBgImage: 'pchero.webp', // Add desktop background image
+    desktopBgImage: 'pcfinalhero.webp', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two' 
   },
@@ -18,7 +18,7 @@ const projects = [
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
     mobileBgImage: 'newabout.webp', 
-    desktopBgImage: 'pc-about2.png', // Add desktop background image
+    desktopBgImage: 'pcfinalabout.webp', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two' 
   },
@@ -28,7 +28,7 @@ const projects = [
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
     mobileBgImage: 'newcont.webp', 
-    desktopBgImage: 'pc-contact2.png', // Add desktop background image
+    desktopBgImage: 'pcfinalcontact.webp', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two', 
     email: 'hello@unimatchashop.com' 

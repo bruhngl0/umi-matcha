@@ -100,14 +100,15 @@
   }
 
 .project-card-link{
-    margin-top: 21rem;
+    margin-top: 10rem;
     background-color: transparent;
-    margin-left: 20rem;
+    margin-left: 50rem;
+    width: 35vw ;
     color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8.5rem;
+    height: 9.5rem;
 }
 
 
@@ -136,13 +137,16 @@
     align-items: center;
     height: 7rem;
     margin-left: 0rem;
+    width: 90vw;
+   
 }
 
   .overlay{
     display: flex;
     justify-content: center;
     height: 7rem;
-    width: 90vw;
+    width: 100%;
+   
     
     background-color: transparent;
     
