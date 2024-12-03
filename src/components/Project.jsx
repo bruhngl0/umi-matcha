@@ -7,8 +7,8 @@ const projects = [
     title: 'UNNECESSARY', 
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
-    mobileBgImage: 'new-hero.webp', 
-    desktopBgImage: 'pcfinalhero.webp', // Add desktop background image
+    mobileBgImage: 'prop-new.png', 
+    desktopBgImage: 'pc-new.png', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two' 
   },
@@ -107,6 +107,14 @@ const Project = () => {
             backgroundPosition: 'center',
           }}
         >
+
+
+          {project.id === 1 ? (
+            <div className="overlay-one-mascot">
+                <img src = "kittygif.gif" />
+            </div>
+          ) : null}
+
           {project.id === 1 ? (
             <div className="overlay-one">
               <div className='box'>

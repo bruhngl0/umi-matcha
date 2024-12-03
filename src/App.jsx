@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import Project from "./components/Project"
 import SocialIcons from "./components/SocialIcons"
 
+
 import "../src/styles/header.scss"
 import "../src/styles/hero.scss"
 import "../src/styles/about.scss"
@@ -20,6 +21,7 @@ function App() {
       
       <Project />
       <SocialIcons />
+ 
       
     </>
   )

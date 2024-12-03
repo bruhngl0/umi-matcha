@@ -113,6 +113,32 @@
 }
 
 
+.overlay-one-mascot{
+  width: 370px;
+  height: auto;
+  background-color:transparent ;
+  position: absolute;
+  left: 47%;
+  bottom: 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >img{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  
+  }
+
+
+
+ 
+}
+
+
+
+
 .overlay{
   display: flex;
   justify-content: center;
@@ -123,6 +149,8 @@
   background-color: transparent;
   
 }
+
+
 
 
 
@@ -152,6 +180,31 @@
     background-color: transparent;
     
   }
+
+
+  .overlay-one-mascot{
+    width: 220px;
+    height: auto;
+    background-color:transparent ;
+    position: absolute;
+    left: 0%;
+    bottom: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    >img{
+      width: 100%;
+      height: auto;
+      background-color: transparent;
+    
+    }
+  
+  
+  
+   
+  }
+  
   
 }
   /* src/Projects.css */
@@ -202,3 +255,5 @@
       transform: rotate(45deg) translate(12px,12px);
     }
    }
+
+
