@@ -8,7 +8,7 @@ const projects = [
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
     mobileBgImage: 'greenhero.webp', 
-    desktopBgImage: 'pcfinalgreen.webp', // Add desktop background image
+    desktopBgImage: 'lol.webp', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two' 
   },
