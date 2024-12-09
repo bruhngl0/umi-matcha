@@ -7,7 +7,7 @@ const projects = [
     title: 'UNNECESSARY', 
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
-    mobileBgImage: 'prop-new.png', 
+    mobileBgImage: 'greenhero.webp', 
     desktopBgImage: 'pc-new.png', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two' 
@@ -17,7 +17,7 @@ const projects = [
     title: 'UNNECESSARY', 
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
-    mobileBgImage: 'newabout.webp', 
+    mobileBgImage: 'green-about.webp', 
     desktopBgImage: 'pcfinalabout.webp', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two' 
@@ -27,7 +27,7 @@ const projects = [
     title: 'UNNECESSARY', 
     description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
     name: 'e-comm', 
-    mobileBgImage: 'newcont.webp', 
+    mobileBgImage: 'greencontact.webp', 
     desktopBgImage: 'pcfinalcontact.webp', // Add desktop background image
     description1:'we live lit', 
     description2: 'test description two', 
