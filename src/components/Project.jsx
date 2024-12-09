@@ -103,7 +103,7 @@ const Project = () => {
           className="project-card"
           style={{
             backgroundImage: `url(${isMobile ? project.mobileBgImage : project.desktopBgImage})`,
-            backgroundSize: 'contain',
+            backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
