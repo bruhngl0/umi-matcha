@@ -8,7 +8,7 @@ const SocialIcons = () => {
   return (
     <div className="fixed-social-icons">
       <a
-        href="https://www.instagram.com/umimatcha.ig?igsh=cTN1MnVrNzg3dXRy"
+        href="https://www.instagram.com/umimatchaclub"
         target="_blank"
         rel="noopener noreferrer"
         className="social-icon instagram"
