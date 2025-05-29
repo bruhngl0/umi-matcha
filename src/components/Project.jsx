@@ -31,7 +31,7 @@ const projects = [
       "Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to",
     name: "e-comm",
     mobileBgImage: "twopaji.png",
-    desktopBgImage: "onepaji.png", // Add desktop background image
+    desktopBgImage: "pcpapa.png", // Add desktop background image
     description1: "we live lit",
     description2: "test description two",
     email: "hello@unimatchashop.com",
