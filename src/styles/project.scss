@@ -149,12 +149,24 @@
   align-items: center;
   height: 10rem;
   width: 80vw;
-  margin-top: 7rem;
+  margin-top: 3rem;
   background-color: transparent;
 
 }
 
 
+.overlay2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 14rem;
+  background-color: transparent;
+
+
+}
 
 
 
@@ -175,13 +187,31 @@
   }
 
   .overlay {
+    position: absolute;
     display: flex;
     justify-content: center;
-    height: 7rem;
+    align-items: start;
+    height: 4rem;
     width: 100%;
 
-    margin-bottom: 4rem;
+
     background-color: transparent;
+
+  }
+
+
+  .overlay2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    bottom: 35%;
+    margin: 0 auto;
+    -bottom: 0rem;
+    background-color: transparent;
+
 
   }
 

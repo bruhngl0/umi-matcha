@@ -127,9 +127,18 @@ const Project = () => {
           ) : null}
 
           {project.id === 3 ? (
-            <a href={`mailto:${project.email}`} className="project-card-link">
-              <div className="overlay"></div>
-            </a>
+            <>
+              <a href={`mailto:${project.email}`} className="project-card-link">
+                <div className="overlay"></div>
+              </a>
+
+              <a
+                href={`https://wa.me/+919568480048`}
+                className="project-card-link"
+              >
+                <div className="overlay2"></div>
+              </a>
+            </>
           ) : null}
         </div>
       ))}
