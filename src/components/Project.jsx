@@ -1,37 +1,40 @@
-import React, { useEffect, useState, useRef } from 'react';
-import '../styles/project.scss';
+import React, { useEffect, useState, useRef } from "react";
+import "../styles/project.scss";
 
 const projects = [
-  { 
-    id: 1, 
-    title: 'UNNECESSARY', 
-    description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
-    name: 'e-comm', 
-    mobileBgImage: 'greenhero.webp', 
-    desktopBgImage: 'lol.webp', // Add desktop background image
-    description1:'we live lit', 
-    description2: 'test description two' 
+  {
+    id: 1,
+    title: "UNNECESSARY",
+    description:
+      "Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to",
+    name: "e-comm",
+    mobileBgImage: "greenhero.webp",
+    desktopBgImage: "lol.webp", // Add desktop background image
+    description1: "we live lit",
+    description2: "test description two",
   },
-  { 
-    id: 2, 
-    title: 'UNNECESSARY', 
-    description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
-    name: 'e-comm', 
-    mobileBgImage: 'green-about.webp', 
-    desktopBgImage: 'pcfinalaboutgreen.webp', // Add desktop background image
-    description1:'we live lit', 
-    description2: 'test description two' 
+  {
+    id: 2,
+    title: "UNNECESSARY",
+    description:
+      "Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to",
+    name: "e-comm",
+    mobileBgImage: "green-about.webp",
+    desktopBgImage: "pcfinalaboutgreen.webp", // Add desktop background image
+    description1: "we live lit",
+    description2: "test description two",
   },
-  { 
-    id: 3, 
-    title: 'UNNECESSARY', 
-    description: 'Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to', 
-    name: 'e-comm', 
-    mobileBgImage: 'greencontact.webp', 
-    desktopBgImage: 'pcfinalcontactgreen.webp', // Add desktop background image
-    description1:'we live lit', 
-    description2: 'test description two', 
-    email: 'hello@unimatchashop.com' 
+  {
+    id: 3,
+    title: "UNNECESSARY",
+    description:
+      "Here is the new, light, and entertaining format of the series that we are excited to present to you format of the series that we are excited to",
+    name: "e-comm",
+    mobileBgImage: "twopaji.png",
+    desktopBgImage: "onepaji.png", // Add desktop background image
+    description1: "we live lit",
+    description2: "test description two",
+    email: "hello@unimatchashop.com",
   },
 ];
 
@@ -46,11 +49,11 @@ const Project = () => {
     };
 
     // Add event listener
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Cleanup event listener
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -58,7 +61,7 @@ const Project = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: "0px",
       threshold: 0.1,
     };
 
@@ -66,14 +69,14 @@ const Project = () => {
       entries.forEach((entry) => {
         const index = projectRefs.current.indexOf(entry.target);
         if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+          entry.target.classList.add("show");
           if (index > 0) {
-            projectRefs.current[index - 1].classList.add('fade-out');
+            projectRefs.current[index - 1].classList.add("fade-out");
           }
         } else {
-          entry.target.classList.remove('show');
+          entry.target.classList.remove("show");
           if (index > 0) {
-            projectRefs.current[index - 1].classList.remove('fade-out');
+            projectRefs.current[index - 1].classList.remove("fade-out");
           }
         }
       });
@@ -103,21 +106,19 @@ const Project = () => {
           className="project-card"
           style={{
             backgroundImage: `url(${isMobile ? project.mobileBgImage : project.desktopBgImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
-
-
           {project.id === 1 ? (
             <div className="overlay-one-mascot">
-                <img src = "kittygif.gif" />
+              <img src="kittygif.gif" />
             </div>
           ) : null}
 
           {project.id === 1 ? (
             <div className="overlay-one">
-              <div className='box'>
+              <div className="box">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -127,9 +128,7 @@ const Project = () => {
 
           {project.id === 3 ? (
             <a href={`mailto:${project.email}`} className="project-card-link">
-              <div className="overlay">
-              
-              </div>
+              <div className="overlay"></div>
             </a>
           ) : null}
         </div>
